@@ -24,6 +24,7 @@ github_username:  suyogsoti
 disqus:
   shortname: suyogsoti.github.io
 # Build settings
+excerpt_separator: <!--excerpt-->
 markdown: kramdown
 theme: minima
 gems:

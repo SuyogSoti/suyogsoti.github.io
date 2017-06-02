@@ -7,7 +7,7 @@ categories: Website Introduction
 author: "Suyog Soti"
 ---
 
-To all of you who do not yet know me, my name is Suyog Soti. I am a cs student who is specially interested in machine learning and different facets about life. This website will go over all of my opinions and interests about the world. This is also the website that I will use to vent all of my thoughts. Coincidentally, I am also the sole owner of the site so there is not much you can do about it except for just not listening to what I have to say. As much as I want to say "Your Loss", I also want an active discussion about the different discussions that I bring up. That being said, I want to rant a bit about Jekyll and its integration unto this website.
+To all of you who do not yet know me, my name is Suyog Soti. I am a cs student who is specially interested in machine learning and different facets about life. This website will go over all of my opinions and interests about the world. <!--excerpt-->This is also the website that I will use to vent all of my thoughts. Coincidentally, I am also the sole owner of the site so there is not much you can do about it except for just not listening to what I have to say. As much as I want to say "Your Loss", I also want an active discussion about the different discussions that I bring up. That being said, I want to rant a bit about Jekyll and its integration unto this website.
 
 ## The Real Rant
 
@@ -26,6 +26,6 @@ $ jekyll new myApp
 
 Jekyll then creates a directory called myApp. I am not going to go into how it works because this post is not meant to be a tutorial. I just wanted to introduce you to the technology behind this website.
 
-I hope that you enjoy what I have to talk about. Please be nice in the comments sections. We are all here because we are interested whatever the post is talking about. Also please pardon the grammer mistakes I have/will inevitable make in the future. I am not an english major!
+I hope that you enjoy what I have to talk about. Please be nice in the comments sections. We are all here because we are interested whatever the post is talking about. Also please pardon the grammar mistakes I have/will inevitably make in the future. I am not an english major!
 
 Thank You
