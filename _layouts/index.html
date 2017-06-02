@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>{{ site.title }}</title>
-</head>
+
+    {% include head.html %}
+
 <body>
-    <div class="nav">
+    <!--<div class="nav">
         <div class="nav_options">Home</div>
         <a href="https://github.com/suyogsoti"><div class="nav_options">Projects</div></a>
         <div class="nav_options">Experiencs</div>
         <div class="nav_options">Blog</div>
         <a href="/about/"><div class="nav_options">About Me</div></a>
-    </div>
+    </div>-->
+    {% include header.html %}
     <div class="header">
         <img src="https://yt3.ggpht.com/RvjZzXel5Ublkfyuhw5jX1lKWTN0iCyGWQsQXek59xZbP1N1nXRqnuWyt9bdgZQpcxyvGwhnYQ=w2120-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no" alt="Background Image">
-        <img src="https://avatars0.githubusercontent.com/u/13604256?v=3&s=200" alt="Profile Picture" style="display: inline-block; float: left;">
+        <img src="https://avatars0.githubusercontent.com/u/13604256?v=3&s=200" alt="Profile Picture" class="profile_pic">
         <div class="profile">
             Suyog Soti
             <div class="icons">
@@ -45,5 +43,6 @@
             </a>
         {% endfor %}
     </div>
+    {% include footer.html %}
 </body>
 </html>
