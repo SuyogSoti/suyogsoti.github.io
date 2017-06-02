@@ -1,26 +1,13 @@
 <header class="site-header" role="banner">
-    <div class="nav">
+    <!--<div class="nav">
         <a href="/"><div class="nav_options">Home</div></a>
         <a href="https://github.com/suyogsoti"><div class="nav_options">Projects</div></a>
         <div class="nav_options">Experiencs</div>
         <div class="nav_options">Blog</div>
         <a href="/about/"><div class="nav_options">About Me</div></a>
-    </div>
-    {% if page.url != "/" %}
-    <div class="wrapper">
-        {% assign default_paths = site.pages | map: "path" %}
-        {% assign page_paths = site.header_pages | default: default_paths %}
-        {% if page_paths %}
-        <div style="height: 10px; width: 100%;"></div>
-        <img style="float: left;" src="https://avatars0.githubusercontent.com/u/13604256?v=3&s=100" alt="Profile Picture">
-        <a class="site-title" style="padding-left: 10px;" href="{{ "/" | relative_url }}">
-            {{ site.title | escape }}
-            <div style="font-size: 20px; margin-top: -25px;">
-                &nbsp; &nbsp; Programmer, Student, Athelete and a Man with Opinions
-            </div>
-        </a>
-
-        <nav class="site-nav">
+    </div>-->
+    <div class="wrapper" style="max-width: none; width: 100%; padding-left: 0px;">
+        <nav class="site-nav" style="float: none;">
             <input type="checkbox" id="nav-trigger" class="nav-trigger" />
             <label for="nav-trigger">
             <span class="menu-icon">
@@ -31,17 +18,35 @@
                 </svg>
             </span>
             </label>
-
-            <!--<div class="trigger">
-            {% for path in page_paths %}
+            <div class="trigger nav" style="margin: auto;">
+                <a href="/" class="page-link nav_options">Home</a>
+                <a href="https://github.com/suyogsoti" class="page-link nav_options">Projects</a>
+                <a href="#" class="page-link nav_options">Experiencs</a>
+                <a href="#" class="page-link nav_options">Blog</a>
+                <a href="/about/" class="page-link nav_options">About me</a>
+            </div>
+            <!--{% for path in page_paths %}
                 {% assign my_page = site.pages | where: "path", path | first %}
                 {% if my_page.title %}
                 <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
                 {% endif %}
-            {% endfor %}
-            </div>-->
+            {% endfor %}-->
         </nav>
-        {% endif %}
     </div>
+    <div class="wrapper">
+    {% if page.url != "/" %}
+        {% assign default_paths = site.pages | map: "path" %}
+        {% assign page_paths = site.header_pages | default: default_paths %}
+        {% if page_paths %}
+            <div style="height: 10px; width: 100%;"></div>
+            <img class="post_pic" src="https://avatars0.githubusercontent.com/u/13604256?v=3&s=100" alt="Profile Picture">
+            <a class="site-title" style="padding-left: 10px;" href="{{ "/" | relative_url }}">
+                {{ site.title | escape }}
+                <div>
+                    &nbsp; &nbsp; Programmer, Student, Athelete and a Man with Opinions
+                </div>
+            </a>
+        {% endif %}
     {% endif %}
+    </div>
 </header>
