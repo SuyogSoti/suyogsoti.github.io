@@ -1,15 +1,7 @@
 ---
 layout: page
-title: About
+title: About Suyog
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Suyog is a cs and math student at the University of Colorado, Boulder. He is deeply interested in machine learning as well as the use of big data. He see life as an eternal cycle of learning, and hope to learn about everything! He loves playing soccer, basketball or any sport. Just don't ask him to go running. Please contact him if your have any questions or just want to get in touch. His email is [_**suyog.soti@gmail.com**_](mailto:suyog.soti@gmail.com).
