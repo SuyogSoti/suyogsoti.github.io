@@ -7,8 +7,6 @@ categories: Website Introduction
 author: "Suyog Soti"
 ---
 
-## Welcome to my website
-
 To all of you who do not yet know me, my name is Suyog Soti. I am a cs student who is specially interested in machine learning and different facets about life. This website will go over all of my opinions and interests about the world. This is also the website that I will use to vent all of my thoughts. Coincidentally, I am also the sole owner of the site so there is not much you can do about it except for just not listening to what I have to say. As much as I want to say "Your Loss", I also want an active discussion about the different discussions that I bring up. That being said, I want to rant a bit about Jekyll and its integration unto this website.
 
 ## The Real Rant
