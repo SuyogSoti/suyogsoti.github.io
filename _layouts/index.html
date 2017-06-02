@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Suyog Soti</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>{{ site.title }}</title>
 </head>
 <body>
     <div class="nav">
@@ -12,7 +12,7 @@
         <a href="https://github.com/suyogsoti"><div class="nav_options">Projects</div></a>
         <div class="nav_options">Experiencs</div>
         <div class="nav_options">Blog</div>
-        <div class="nav_options">About Me</div>
+        <a href="/about/"><div class="nav_options">About Me</div></a>
     </div>
     <div class="header">
         <img src="https://yt3.ggpht.com/RvjZzXel5Ublkfyuhw5jX1lKWTN0iCyGWQsQXek59xZbP1N1nXRqnuWyt9bdgZQpcxyvGwhnYQ=w2120-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no" alt="Background Image">
@@ -34,6 +34,16 @@
                 </a>
             </div>
         </div>
+    </div>
+    <div class="content">
+        {% for post in site.posts %}
+            <a href="{{ post.url }}">
+                <div class="post">
+                    <h1>{{ post.title }}</h1>
+                    {{ post.excerpt }}
+                </div>
+            </a>
+        {% endfor %}
     </div>
 </body>
 </html>

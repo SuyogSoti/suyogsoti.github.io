@@ -1,0 +1,75 @@
+---
+---
+body{
+    margin: 0 auto;
+    font-family: 'Slabo 27px', serif;
+    background-image: url(https://pages-themes.github.io/tactile/assets/images/body-bg.png);
+    div.nav{
+        width: 1000;
+        background-color: black;
+        color: white;
+        min-height: 40px;
+        line-height: 40px;
+    }
+
+    div.nav div.nav_options{
+        display: inline-block;
+        min-width: 90px;
+        text-align: center;
+        font-size: 20px;
+        padding: 0px 10px;
+        height: 100%;
+
+        &:hover{
+            background-color: white;
+            cursor: pointer;
+            color: black;
+        }
+    }
+
+    div.header{
+        max-width: 1200px;
+        margin: auto;
+        background-color: black;
+        overflow: hidden;
+        color: white;
+        padding-bottom: 0;
+
+        div.profile{
+            font-size: 100px;
+            display: inline-block;
+            /*float: right;*/
+            padding-bottom: 0;
+            padding-left: 50px;
+            margin-bottom: -40px;
+
+            div.icons{
+                height: 30px;
+                margin-top: -38px;
+
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+    div.content{
+        max-width: 1200px;
+        margin: auto;
+
+        div.post{
+            padding: 20px;
+            background-color: #fdfdfd;
+            &:hover{
+                background-color: rgb(100%, 100%, 100%);
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    a:visited{
+        color: inherit;
+    }
+}
