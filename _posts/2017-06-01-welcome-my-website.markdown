@@ -7,7 +7,3 @@ categories: Website Introduction
 ---
 
 Welcome to my website
-
-<script id="dsq-count-scr" src="//suyogsoti-github-io.disqus.com/count.js" async></script>
-<!--DISCUS lookup-->
-<!--<a href="http://foo.com/bar.html#disqus_thread">Link</a>.-->
