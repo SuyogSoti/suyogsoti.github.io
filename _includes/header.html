@@ -11,7 +11,14 @@
         {% assign default_paths = site.pages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
         {% if page_paths %}
-        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        <div style="height: 10px; width: 100%;"></div>
+        <img style="float: left;" src="https://avatars0.githubusercontent.com/u/13604256?v=3&s=100" alt="Profile Picture">
+        <a class="site-title" style="padding-left: 10px;" href="{{ "/" | relative_url }}">
+            {{ site.title | escape }}
+            <div style="font-size: 20px; margin-top: -25px;">
+                &nbsp; &nbsp; Programmer, Student, Athelete and a Man with Opinions
+            </div>
+        </a>
 
         <nav class="site-nav">
             <input type="checkbox" id="nav-trigger" class="nav-trigger" />
