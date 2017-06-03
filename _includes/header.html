@@ -6,7 +6,8 @@
         <div class="nav_options">Blog</div>
         <a href="/about/"><div class="nav_options">About Me</div></a>
     </div>-->
-    <div class="wrapper" style="max-width: none; width: 100%; padding-left: 0px; padding-right: 0px;">
+    <div class="wrapper">
+    <!--<div class="wrapper" style="max-width: none; width: 100%; padding-left: 0px; padding-right: 0px;">-->
         <nav class="site-nav" style="float: none;">
             <input type="checkbox" id="nav-trigger" class="nav-trigger" />
             <label for="nav-trigger">
@@ -18,12 +19,12 @@
                 </svg>
             </span>
             </label>
-            <div class="trigger nav" style="margin: auto;">
-                <a href="/" class="page-link nav_options">Home</a>
-                <a href="https://github.com/suyogsoti" class="page-link nav_options">Projects</a>
-                <a href="#" class="page-link nav_options">Experiencs</a>
-                <a href="#" class="page-link nav_options">Blog</a>
-                <a href="/about/" class="page-link nav_options">About me</a>
+            <div class="trigger">
+                <a href="/" class="page-link">Home</a>
+                <a href="https://github.com/suyogsoti" class="page-link">Projects</a>
+                <a href="#" class="page-link">Experiencs</a>
+                <a href="/blog/" class="page-link">Blog</a>
+                <!--<a href="/about/" class="page-link">About me</a>-->
             </div>
             <!--{% for path in page_paths %}
                 {% assign my_page = site.pages | where: "path", path | first %}
@@ -32,14 +33,13 @@
                 {% endif %}
             {% endfor %}-->
         </nav>
-    </div>
-    <div class="wrapper">
-    {% if page.url != "/" %}
+    <!--</div>-->
+    <!--{% if page.url != "/" %}
         {% assign default_paths = site.pages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
         {% if page_paths %}
             <div style="height: 10px; width: 100%;"></div>
-            <img class="post_pic" src="https://avatars0.githubusercontent.com/u/13604256?v=3&s=100" alt="Profile Picture">
+            <img class="post_pic" src="https://avatars0.githubusercontent.com/u/13604256?v=3&s=300" alt="Profile Picture">
             <a class="site-title" style="padding-left: 10px;" href="{{ "/" | relative_url }}">
                 {{ site.title | escape }}
                 <div>
@@ -47,6 +47,6 @@
                 </div>
             </a>
         {% endif %}
-    {% endif %}
+    {% endif %}-->
     </div>
 </header>

@@ -3,6 +3,19 @@
 
     {% include head.html %}
 
+    <script>
+        $(document).ready(() => {
+            $("div#home-sidebar div").click((e) => {
+                let past = "div."+$("div.results:visible").attr("type")
+                $("div.results:visible").fadeOut("fast", () => {
+                    $(past).css("background-color", "inherit")
+                    $("div."+e.target.classList[1]).css("background-color", "white")
+                    $("div#"+e.target.textContent).fadeIn()
+                })
+            })
+        })
+    </script>
+
 <body>
     <!--<div class="nav">
         <div class="nav_options">Home</div>
@@ -12,9 +25,9 @@
         <a href="/about/"><div class="nav_options">About Me</div></a>
     </div>-->
     {% include header.html %}
-    <div class="header">
+    <!--<div class="header">
         <img src="https://yt3.ggpht.com/RvjZzXel5Ublkfyuhw5jX1lKWTN0iCyGWQsQXek59xZbP1N1nXRqnuWyt9bdgZQpcxyvGwhnYQ=w2120-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no" alt="Background Image">
-        <img src="https://avatars0.githubusercontent.com/u/13604256?v=3&s=200" alt="Profile Picture" class="profile_pic">
+        <img src="https://avatars0.githubusercontent.com/u/13604256?v=3&s=500" alt="Profile Picture" class="profile_pic">
         <div class="profile">
             Suyog Soti
             <div class="icons">
@@ -32,17 +45,118 @@
                 </a>
             </div>
         </div>
-    </div>
-    <div class="content" style="background-color: white;">
-        <h1 style="background-color: white; margin-top: 10px; padding: 20px;">Latest Blog Posts</h1>
-        {% for post in site.posts limit: 10%}
-            <a href="{{ post.url }}">
-                <div class="post">
-                    <h1>{{ post.title }}</h1>
-                    {{ post.excerpt }}
-                </div>
-            </a>
-        {% endfor %}
+    </div>-->
+    <div class="content">
+        <div class="side-bar" id="home-sidebar">
+            <div class="side-options Me">Me</div>
+            <div class="side-options Interests">Interests</div>
+            <div class="side-options School">School</div>
+            <div class="side-options Tools">Tools</div>
+            <!--<div class="side-options Experiences">Experiences</div>-->
+        </div>
+        <div class="results" id="Me" type="Me">
+        <div class="profile">
+            <img src="https://avatars0.githubusercontent.com/u/13604256?v=3&s=500" alt="Profile Picture" class="profile_pic">
+            Suyog Soti
+            <div class="icons">
+                <a href="https://facebook.com/suyogsoti">
+                    <img src="http://violetmaelim.com/blog/wp-content/uploads/2010/08/Facebook-icon.png" alt="Find me on Facebook">
+                </a>
+                <a href="https://linkedin.com/in/suyogsoti">
+                    <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png" alt="Find me on LinkedIn">
+                </a>
+                <a href="https://twitter.com/suyogsoti">
+                    <img src="http://www.freepromotips.com/sites/default/files/twitter-Square.jpg" alt="Find me on Twitter">
+                </a>
+                <a href="https://github.com/suyogsoti">
+                    <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="Find me on Github">
+                </a>
+            </div>
+        </div>
+        <div style="padding: 60px; font-size: 20px;">
+Suyog is a cs and math student at the University of Colorado, Boulder. He is deeply interested in machine learning as well as the use of big data. He see life as an eternal cycle of learning, and hopes to learn about everything! He loves playing soccer, basketball or any sport. Just don't ask him to go running. Please contact him if your have any questions or just want to get in touch. His email is suyog.soti@gmail.com.</div>
+        </div>
+        <div class="results" id="Interests" type="Interests">
+            <ul style="padding: 40px; font-size: 20px;">
+                <li>Artificial Intelligence</li>
+                &nbsp; One day, I will help make it a reality!
+                <ul>
+                    <li>I am specially interested in finding a way to make machines understand context.</li>
+                    The machine should that it is making tea when it makes tea. It should know what tea is, and look at it from the same perspective that human being do.
+                </ul>
+                <li>Virtual Reality</li>
+                <ul>
+                    <li>Interested in a cost effective immersive experience</li>
+                </ul>
+                <li>The Technology Gap</li>
+                <ul>
+                    <li>There must be more diversity in Stem fields in general in the American Workforce.</li>
+                    <li>I was born in Nepal, and I have seen some of the Technology gaps in the world. I want to help shorten that because I belive technology is knowledge.</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="results" id="School" type="School">
+            <ul style="padding: 40px; font-size: 20px;">
+                <li>University: <span class="ans">University of Colorado at Boulder</span></li>
+                <li>Major: <span class="ans">Applied Math and Computer Science</span></li>
+                <li>Expected Graduation Date: <span class="ans">2020</span></li>
+                <li>Courses</li>
+                <ul>
+                    <li>Applied Math</li>
+                    <ul>
+                        <li><span class="ans">Calculus 3</span></li>
+                        <li><span class="ans">Differential Equations and Linear Algebra</span></li>
+                        <li><span class="ans">Discrete Math</span></li>
+                    </ul>
+                    <li>Computer Science</li>
+                    <ul>
+                        <li><span class="ans">Data Structures</span></li>
+                    </ul>
+                </ul>
+            </ul>
+            <img style="width: 400px; margin-top: -165px; float: right; margin-right: 20px;" src="https://i.ytimg.com/vi/AHNAgyyXiOI/maxresdefault.jpg" alt="Colorado">
+        </div>
+        <div class="results" id="Tools" type="Tools">
+            <ul style="padding: 40px; font-size: 20px; display:inline-block">
+                <li>Machine Learngin</li>
+                <ul>
+                    <li>Python</li>
+                    <li>Matlab</li>
+                    <li>Octave</li>
+                </ul>
+                <li>Virtual Reality</li>
+                <ul>
+                    <li>Unity</li>
+                </ul>
+                <li>Web Apps</li>
+                <ul>
+                    <li>Ruby on Rails</li>
+                    <li>Djaingo (Python)</li>
+                    <li>NodeJs</li>
+                    <li>PHP</li>
+                </ul>
+            </ul>
+            <ul style="padding: 40px; font-size: 20px; display:inline-block">
+                <li>Scientific Computing</li>
+                <ul>
+                    <li>Python (scipy, numpy, pandas)</li>
+                    <li>Matlab</li>
+                    <li>Mathematica</li>
+                </ul>
+                <li>Desktop Apps</li>
+                <ul>
+                    <li>Python PyQt4</li>
+                    <li>JAVA</li>
+                    <li>C++</li>
+                </ul>
+                <li>Automation UI</li>
+                <ul>
+                    <li>Sikuli</li>
+                    <li>Selenium</li>
+                </ul>
+            </ul>
+        </div>
+        <!--<div class="results" id="Experiences" type="Experiences">Experiences</div>-->
     </div>
     {% include footer.html %}
 
