@@ -1,0 +1,15 @@
+---
+layout: post
+comments: true
+title:  "National Institute of Standards and Technology"
+date:   2017-06-02
+blog: false
+start: May 2015
+end: May 2016
+categories: Experience
+author: "Suyog Soti"
+summary: Built a Curvefitting Library and a webapp(Kiosk) to handle the private library (both for internal use).
+tools: Python(pandas, Scipy, Numpy) Ruby on Rails
+---
+
+Built a Curvefitting Library and a webapp(Kiosk) to handle the private library (both for internal use).
