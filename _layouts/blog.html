@@ -10,12 +10,14 @@ layout: default
 
   <div class="post-content">
     {% for post in site.posts limit: 10%}
+      {% if post.blog != false %}
         <a href="{{ post.url }}">
             <div class="post">
                 <h1>{{ post.title }}</h1>
                 {{ post.excerpt }}
             </div>
         </a>
+      {% endif %}
     {% endfor %}
   </div>
 
