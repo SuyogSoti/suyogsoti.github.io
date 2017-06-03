@@ -5,12 +5,12 @@
 
     <script>
         $(document).ready(() => {
-            $("div#home-sidebar div").click((e) => {
-                let past = "div."+$("div.results:visible").attr("type")
-                $("div.results:visible").fadeOut("fast", () => {
+            $("div.content div#home-sidebar div").click((e) => {
+                let past = "div.content div."+$("div.results:visible").attr("type")
+                $("div.content div.results:visible").fadeOut("fast", () => {
                     $(past).css("background-color", "inherit")
-                    $("div."+e.target.classList[1]).css("background-color", "white")
-                    $("div#"+e.target.textContent).fadeIn()
+                    $("div.content div."+e.target.classList[1]).css("background-color", "white")
+                    $("div.content div#"+e.target.textContent).fadeIn()
                 })
             })
         })
