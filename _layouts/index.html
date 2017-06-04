@@ -9,7 +9,7 @@
                 let past = "div.content div."+$("div.results:visible").attr("type")
                 $("div.content div.results:visible").fadeOut("fast", () => {
                     $(past).css("background-color", "inherit")
-                    $("div.content div."+e.target.classList[1]).css("background-color", "white")
+                    $("div.content div."+e.target.classList[1]).css("background-color", "#f6f6f6")
                     $("div.content div#"+e.target.textContent).fadeIn()
                 })
             })
