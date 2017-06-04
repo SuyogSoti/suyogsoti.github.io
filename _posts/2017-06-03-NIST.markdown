@@ -8,7 +8,6 @@ start: May 2015
 end: May 2016
 categories: Experience
 author: "Suyog Soti"
-summary: Built a Curvefitting Library and a webapp(Kiosk) to handle the private library (both for internal use).
 tools: Python(pandas, Scipy, Numpy) Ruby on Rails
 ---
 

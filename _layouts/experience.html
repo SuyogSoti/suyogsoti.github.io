@@ -7,15 +7,15 @@ layout: default
   </header>
 
 {% for post in site.categories.Experience %}
-    <a href="{{ post.url }}">
+    <!--<a href="{{ post.url }}">-->
         <div class="experience">
             <h1>{{ post.title }}</h1>
-            {{ post.summary }}
+            {{ post.excerpt }}
             <div class="tools">
                 {{ post.start }} - {{ post.end }}
                 <br />
                 Tools: <span style="font-style: italic"> {{ post.tools }} </span>
             </div>
         </div>
-    </a>
+    <!--</a>-->
 {% endfor %}

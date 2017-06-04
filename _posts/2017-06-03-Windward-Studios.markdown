@@ -8,7 +8,6 @@ end: Present
 blog: false
 categories: Experience
 author: "Suyog Soti"
-summary: Handling the Automation of QA tools.
 tools: JAVA(Sikuli), C#, UI Automation (Sikuli)
 ---
 

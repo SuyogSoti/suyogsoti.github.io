@@ -223,23 +223,32 @@ body{
     }
 }
 div.experience{
-    height: 150px;
-    width: 100%;
+    min-height: 150px;
+    width: 90%;
+    margin: auto;
     padding: 20px;
     background-color: white;
+    margin-top: 10px;
+    box-shadow: inset 0 0 10px #000000;
     div.tools{
         padding: 10px;
     }
-    &:hover{
-        background-color: #f2f6f7;
-    }
+    // &:hover{
+    //     background-color: #f2f6f7;
+    // }
 }
 @media screen and (max-width: 600px){
+    main.page-content{
+        min-height: 800px;
+    }
     div.wrapper{
         width:100%;
         height: 50px;
-    }
-    .site-nav {
-        right: auto;
+        .site-nav {
+            right: auto;
+            label[for="nav-trigger"]{
+                float: left;
+            }
+        }
     }
 }
