@@ -8,8 +8,8 @@
             $("div.content div#home-sidebar div").click((e) => {
                 let past = "div.content div."+$("div.results:visible").attr("type")
                 $("div.content div.results:visible").fadeOut("fast", () => {
-                    $(past).css("background-color", "inherit")
-                    $("div.content div."+e.target.classList[1]).css("background-color", "#f6f6f6")
+                    $(past).removeClass("set")
+                    $("div.content div."+e.target.classList[1]).addClass("set")
                     $("div.content div#"+e.target.textContent).fadeIn()
                 })
             })
@@ -48,7 +48,7 @@
     </div>-->
     <div class="content">
         <div class="side-bar" id="home-sidebar">
-            <div class="side-options Me">Me</div>
+            <div class="side-options Me set">Me</div>
             <div class="side-options Interests">Interests</div>
             <div class="side-options School">School</div>
             <div class="side-options Tools">Tools</div>
