@@ -94,7 +94,7 @@ body{
                 width: 300px;
                 margin: auto;
                 // float: none;
-                padding-top: 110px;
+                padding-top: 0px;
                 // display: block;
             }
             img.optional{
@@ -124,6 +124,7 @@ body{
                 }
                 ul.tool{
                     padding: 10px;
+                    padding-top: 40px;
                     display: inline-block;
                 }
             }
