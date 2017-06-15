@@ -11,4 +11,4 @@ author: "Suyog Soti"
 tools: Python(pandas, Scipy, Numpy) Ruby on Rails
 ---
 
-Built a Curvefitting Library and a webapp(Kiosk) to handle the private library (both for internal use).
+Built a Curve fitting Library and a web app(kiosk) to handle the private library (both for internal use).

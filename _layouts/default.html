@@ -8,7 +8,7 @@
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
-      <div style="padding: 10px 20px; max-width: 770px; margin: auto;">
+      <div class="wrapper">
         {{ content }}
       </div>
     </main>
@@ -30,7 +30,7 @@
   this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
   };
   */
-  (function() { // DON'T EDIT BELOW THIS LINE
+  ;(function() { // DON'T EDIT BELOW THIS LINE
   var d = document, s = d.createElement('script');
   s.src = 'https://suyogsoti-github-io.disqus.com/embed.js';
   s.setAttribute('data-timestamp', +new Date());
