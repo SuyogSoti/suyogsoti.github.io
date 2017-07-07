@@ -1,11 +1,12 @@
 ---
 layout: post
 comments: true
-title:  "Oatmeal Diaries Launches"
-date:   2017-06-13
+title: Oatmeal Diaries Launches
+date: {}
 blog: true
 categories: Education Technology Encryption Keybase
-author: "Suyog Soti"
+author: Suyog Soti
+published: true
 ---
 
 Hello Everybody,
