@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Oatmeal Diaries Launches
-date: {}
+date: 2017-06-13
 blog: true
 categories: Education Technology Encryption Keybase
 author: Suyog Soti
@@ -34,4 +34,4 @@ I think that most everybody has some idea on what cryptography is and how it wor
 1. the content of my message will not be revealed
 2. the hacker can not pretend to be me and gain information from Bob
 
-The obvious answer that came up was that the datat would be modified in some way by a key sy the sender. The recepient would then have the corresponding key turn the data back to the way it was before. The data would also be signed by the sender in some way so the recipient wll know for sure that I was the one who sent the data. There is however a problem that comes with this approact. If I was the sender and Bob was the recipient who lives half way around the world, how will Bob and I exchange keys?
+The obvious answer that came up was that the data would be modified in some way by a key that the sender has. The recipient would then have the corresponding key turn the data back to the way it was before. The data would also be signed by the sender in some way so the recipient will know for sure that I was the one who sent the data. There is however a problem that comes with this approach. If I was the sender and Bob was the recipient who lives half way around the world, how will Bob and I exchange keys?
