@@ -12,5 +12,7 @@ tools: PHP(Wordpress), Network Management
 ---
 
 Created the backend platform of the marketplace that matches students with internships. 
-Created and manage the IT infrastructure as well as the website. 
+
+Created and managed the IT infrastructure as well as the website. 
+
 Advise the team about the interests of the current youths of Colorado.
