@@ -17,7 +17,7 @@ I have recently launched my own podcast. It will explore the intricacies of tech
 
 ## First Episode
 
-The very first episode will go over why I want to start this podcast in addition to going over my new interest, keybase. I was recently introduced to this new application named [keybase](https://keybase.io). It can be decribed as a public hosting of your public keys for communication using public cryptography by verifying your identifies using all of your varius social media accounts. Please listen to the podcast for more of my thoughts/information.
+The very first episode will go over why I want to start this podcast in addition to going over my new interest, keybase. I was recently introduced to this new application named [keybase](https://keybase.io). It can be decribed as a public hosting of your public keys for communication using public cryptography by verifying your identifies using all of your various social media accounts. Please listen to the podcast for more of my thoughts/information.
 
 PSA: My main hosting for this podcast is [Archive.org](https://archive.org/details/@suyogsoti) because it is free. I will add the first few episodes to [soundcloud](https://soundcloud.com/suyog-soti) as well because soundcloud is a popular platform.
 
@@ -38,7 +38,7 @@ The obvious answer that came up was that the data would be modified in some way 
 
 ### The flaw
 
-There is of course a problem with Public Key Cryptography. The question is, how to we know that we are getting the public key from the right person. The who idea would fail if we just sent the message to the wrong entity. How do we know that the public key we receive is correct?
+There is of course a problem with Public Key Cryptography. The question is, how to we know that we are getting the public key from the right person. The whole idea would fail if we just sent the message to the wrong entity. How do we know that the public key we receive is correct?
 
 ### The Solution -- Keybase 
 

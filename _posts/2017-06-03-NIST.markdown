@@ -11,4 +11,6 @@ author: "Suyog Soti"
 tools: Python(pandas, Scipy, Numpy) Ruby on Rails
 ---
 
-Built a Curve fitting Library and a web app(kiosk) to handle the private library (both for internal use).
+Built a plugin for Thermodynamic Data Engine that optimizes multi-dimensional curve fits for long range vapor pressure equations using machine learning.
+
+Created and deployed a web app built in Rails that keeps track of the books in the library in the Thermodynamics Department of the Boulder branch and handles checking them and sending notification near the due date.

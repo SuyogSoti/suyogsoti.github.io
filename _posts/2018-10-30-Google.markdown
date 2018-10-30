@@ -1,0 +1,16 @@
+---
+layout: post
+comments: true
+title:  "Google"
+date:   2018-10-30
+start: May 2018
+end: August 2018
+blog: false
+categories: Experience
+author: "Suyog Soti"
+tools: C++, TypeScript, Angular
+---
+
+**Stackdriver/Cloud Trace in Google Cloud Platform**
+
+Developed the algorithm to identify and merge server and client spans. Worked on the integration of Error Reporting and Cloud Trace, and on the integration of Stackdriver Profiler and Cloud Trace. Also created an interactive data visualization of distributed traces.
