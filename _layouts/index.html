@@ -7,52 +7,22 @@
         $(document).ready(() => {
             $("div.content div#home-sidebar div").click((e) => {
                 let past = "div.content div."+$("div.results:visible").attr("type")
-                $("div.content div.results:visible").fadeOut("fast", () => {
+                $("div.content div.results:visible").fadeOut(1, () => {
                     $(past).removeClass("set")
                     $("div.content div."+e.target.classList[1]).addClass("set")
-                    $("div.content div#"+e.target.textContent).fadeIn()
+                    $("div.content div#"+e.target.textContent).fadeIn(1)
                 })
             })
         })
     </script>
 
 <body>
-    <!--<div class="nav">
-        <div class="nav_options">Home</div>
-        <a href="https://github.com/suyogsoti"><div class="nav_options">Projects</div></a>
-        <div class="nav_options">Experiencs</div>
-        <div class="nav_options">Blog</div>
-        <a href="/about/"><div class="nav_options">About Me</div></a>
-    </div>-->
     {% include header.html %}
-    <!--<div class="header">
-        <img src="https://yt3.ggpht.com/RvjZzXel5Ublkfyuhw5jX1lKWTN0iCyGWQsQXek59xZbP1N1nXRqnuWyt9bdgZQpcxyvGwhnYQ=w2120-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no" alt="Background Image">
-        <img src="https://avatars0.githubusercontent.com/u/13604256?v=3&s=500" alt="Profile Picture" class="profile_pic">
-        <div class="profile">
-            Suyog Soti
-            <div class="icons">
-                <a href="https://facebook.com/suyogsoti">
-                    <img src="http://violetmaelim.com/blog/wp-content/uploads/2010/08/Facebook-icon.png" alt="Find me on Facebook">
-                </a>
-                <a href="https://linkedin.com/in/suyogsoti">
-                    <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png" alt="Find me on LinkedIn">
-                </a>
-                <a href="https://twitter.com/suyogsoti">
-                    <img src="http://www.freepromotips.com/sites/default/files/twitter-Square.jpg" alt="Find me on Twitter">
-                </a>
-                <a href="https://github.com/suyogsoti">
-                    <img src="https://www.girldevelopit.com/assets/github-fork-476365c39e16ea2d6172e4c1e8cf6e7c.png" alt="Find me on Github">
-                </a>
-            </div>
-        </div>
-    </div>-->
     <div class="content">
         <div class="side-bar" id="home-sidebar">
             <div class="side-options Me set">Me</div>
             <div class="side-options Interests">Interests</div>
             <div class="side-options School">School</div>
-            <div class="side-options Tools">Tools</div>
-            <!--<div class="side-options Experiences">Experiences</div>-->
         </div>
         <div class="results" id="Me" type="Me">
             <div class="profile">
@@ -67,7 +37,7 @@
                 </div>
                 <div class="icons">
                     <a href="https://facebook.com/suyogsoti">
-                        <img src="http://violetmaelim.com/blog/wp-content/uploads/2010/08/Facebook-icon.png" alt="Find me on Facebook">
+                        <img src="https://i.imgur.com/VwcIIKr.png" alt="Find me on Facebook">
                     </a>
                     <a href="https://linkedin.com/in/suyogsoti">
                         <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png" alt="Find me on LinkedIn">
@@ -97,6 +67,11 @@
                     <li>There must be more diversity in Stem fields in general in the American Workforce.</li>
                     <li>I was born in Nepal, and I have seen some of the Technology gaps in the world. I want to help shorten that because I belive technology is knowledge.</li>
                 </ul>
+                <li>Tech Policy</li>
+                <ul>
+                    <li>Are some tech companies too big? - Are they basically monopolies?</li>
+                    <li>Are the size and actions of tech companies inhibiting innovation and competition?</li>
+                </ul>
             </ul>
         </div>
         <div class="results" id="School" type="School">
@@ -107,47 +82,6 @@
             </ul>
             <img class="optional" src="https://i.ytimg.com/vi/AHNAgyyXiOI/maxresdefault.jpg" alt="Colorado">
         </div>
-        <div class="results" id="Tools" type="Tools">
-            <ul class="tool">
-                <li>Machine Learning</li>
-                <ul>
-                    <li>Python</li>
-                    <li>Matlab</li>
-                    <li>Octave</li>
-                </ul>
-                <li>Virtual Reality</li>
-                <ul>
-                    <li>Unity (Javascript and C#)</li>
-                </ul>
-                <li>Web Apps</li>
-                <ul>
-                    <li>Ruby on Rails</li>
-                    <li>Djaingo (Python)</li>
-                    <li>NodeJs</li>
-                    <li>PHP</li>
-                </ul>
-            </ul>
-            <ul class="tool">
-                <li>Scientific Computing</li>
-                <ul>
-                    <li>Python (scipy, numpy, pandas)</li>
-                    <li>Matlab</li>
-                    <li>Mathematica</li>
-                </ul>
-                <li>Desktop Apps</li>
-                <ul>
-                    <li>Python PyQt4</li>
-                    <li>JAVA</li>
-                    <li>C++</li>
-                </ul>
-                <li>Automation UI</li>
-                <ul>
-                    <li>Sikuli</li>
-                    <li>Selenium</li>
-                </ul>
-            </ul>
-        </div>
-        <!--<div class="results" id="Experiences" type="Experiences">Experiences</div>-->
     </div>
     {% include footer.html %}
 
